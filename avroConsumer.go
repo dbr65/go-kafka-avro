@@ -2,11 +2,12 @@ package kafka
 
 import (
 	"encoding/binary"
-	"github.com/Shopify/sarama"
-	"github.com/bsm/sarama-cluster"
-	"github.com/linkedin/goavro/v2"
 	"os"
 	"os/signal"
+
+	"github.com/Shopify/sarama"
+	cluster "github.com/bsm/sarama-cluster"
+	"github.com/dbr65/goavro"
 )
 
 type avroConsumer struct {

@@ -2,9 +2,10 @@ package kafka
 
 import (
 	"encoding/binary"
-	"github.com/Shopify/sarama"
-	"github.com/linkedin/goavro/v2"
 	"time"
+
+	"github.com/Shopify/sarama"
+	"github.com/dbr65/goavro"
 )
 
 type AvroProducer struct {

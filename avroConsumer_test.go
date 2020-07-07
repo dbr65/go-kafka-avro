@@ -2,9 +2,10 @@ package kafka
 
 import (
 	"encoding/binary"
-	"github.com/Shopify/sarama"
-	"github.com/linkedin/goavro/v2"
 	"testing"
+
+	"github.com/Shopify/sarama"
+	"github.com/dbr65/goavro"
 )
 
 var testData = `{"val":1}`

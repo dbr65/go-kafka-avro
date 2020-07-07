@@ -4,12 +4,13 @@ import (
 	"bytes"
 	"encoding/json"
 	"fmt"
-	"github.com/linkedin/goavro/v2"
 	"io"
 	"io/ioutil"
 	"math/rand"
 	"net/http"
 	"time"
+
+	"github.com/dbr65/goavro"
 )
 
 // SchemaRegistryClientInterface defines the api for all clients interfacing with schema registry

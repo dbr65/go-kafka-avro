@@ -3,8 +3,9 @@ package main
 import (
 	"flag"
 	"fmt"
-	"github.com/dangkaka/go-kafka-avro"
 	"time"
+
+	"github.com/dbr65/go-kafka-avro"
 )
 
 var kafkaServers = []string{"localhost:9092"}
@@ -17,11 +18,17 @@ func main() {
 				"type": "record",
 				"name": "Example",
 				"fields": [
-					{"name": "Id", "type": "string"},
-					{"name": "Type", "type": "string"},
-					{"name": "Data", "type": "string"}
+					{
+						"name": "Number",
+						"doc": "Phone number inside the national network. Length between 4-14",
+						"type":  [{
+							  "type": "string",
+							  "logicalType": "validated-string",
+							  "pattern": "^[\\d]{4,14}$"
+						}]
+					}
 				]
-			}`
+			   }`
 	producer, err := kafka.NewAvroProducer(kafkaServers, schemaRegistryServers)
 	if err != nil {
 		fmt.Printf("Could not create avro producer: %s", err)
@@ -36,9 +43,7 @@ func main() {
 
 func addMsg(producer *kafka.AvroProducer, schema string) {
 	value := `{
-		"Id": "1",
-		"Type": "example_type",
-		"Data": "example_data"
+		"Number": "346267819182223333333e2222222"
 	}`
 	key := time.Now().String()
 	err := producer.Add(topic, schema, []byte(key), []byte(value))

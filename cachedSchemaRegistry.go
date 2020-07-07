@@ -1,8 +1,9 @@
 package kafka
 
 import (
-	"github.com/linkedin/goavro/v2"
 	"sync"
+
+	"github.com/dbr65/goavro"
 )
 
 // CachedSchemaRegistryClient is a schema registry client that will cache some data to improve performance
