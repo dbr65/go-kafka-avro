@@ -21,11 +21,11 @@ func main() {
 					{
 						"name": "Number",
 						"doc": "Phone number inside the national network. Length between 4-14",
-						"type":  [{
+						"type":  {
 							  "type": "string",
 							  "logicalType": "validated-string",
 							  "pattern": "^[\\d]{4,14}$"
-						}]
+						}
 					}
 				]
 			   }`
@@ -43,7 +43,7 @@ func main() {
 
 func addMsg(producer *kafka.AvroProducer, schema string) {
 	value := `{
-		"Number": "346267819182223333333e2222222"
+		"Number": "34675777777999999999999"
 	}`
 	key := time.Now().String()
 	err := producer.Add(topic, schema, []byte(key), []byte(value))

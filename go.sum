@@ -13,8 +13,8 @@ github.com/dangkaka/go-kafka-avro v0.0.0-20200609051134-e714c259f1e9/go.mod h1:O
 github.com/davecgh/go-spew v1.1.0/go.mod h1:J7Y8YcW2NihsgmVo/mv3lAwl/skON4iLHjSsI+c5H38=
 github.com/davecgh/go-spew v1.1.1 h1:vj9j/u1bqnvCEfJOwUhtlOARqs3+rkHYY13jYWTU97c=
 github.com/davecgh/go-spew v1.1.1/go.mod h1:J7Y8YcW2NihsgmVo/mv3lAwl/skON4iLHjSsI+c5H38=
-github.com/dbr65/goavro v2.1.0+incompatible h1:biMapVG0i5Hx+/iKV6JapeWyTAManpYaFe8/NF1xtJM=
-github.com/dbr65/goavro v2.1.0+incompatible/go.mod h1:Wu7iIocsxZI8DkAp6mFQuN+enlR/cQTVwAfQsLYla9M=
+github.com/dbr65/goavro v1.0.6-0.20200708111900-92303365f839 h1:DxalAr1MG7Mbj2/NJxdJI3CsJ7gb0PDIioGkxYZR1Ws=
+github.com/dbr65/goavro v1.0.6-0.20200708111900-92303365f839/go.mod h1:NBk++SgzKF7xAhFJIhFk6Bu6pee/5KxosvliXTANuNs=
 github.com/eapache/go-resiliency v1.1.0 h1:1NtRmCAqadE2FN4ZcN6g90TP3uk8cg9rn9eNK2197aU=
 github.com/eapache/go-resiliency v1.1.0/go.mod h1:kFI+JgMyC7bLPUVY133qvEBtVayf5mFgVsvEsIPBvNs=
 github.com/eapache/go-resiliency v1.2.0 h1:v7g92e/KSN71Rq7vSThKaWIq68fL4YHvWyiUKorFR1Q=
